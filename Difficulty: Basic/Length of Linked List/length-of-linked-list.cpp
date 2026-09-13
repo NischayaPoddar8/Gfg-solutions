@@ -14,10 +14,9 @@ class Solution {
   public:
     int getCount(Node* head) {
         // Code here
-        Node* temp = head;
         int len = 0;
-        while(temp){
-            temp = temp->next;
+        while(head){
+            head = head->next;
             len++;
         }
         return len;
